@@ -15,8 +15,9 @@ export default class GraphqlCodeBlock extends Component {
   render() {
     const { className, queryBody } = this.props;
 
+    let formatted;
     try {
-      const formatted = print(parse(queryBody));
+      formatted = print(parse(queryBody));
     } catch {
       return (<div className={className}>Could not parse graphQL query</div>);
     }
