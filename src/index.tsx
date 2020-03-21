@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import runParser from './runParser';
-// @ts-ignore
 import { print } from 'graphql/language/printer';
-// @ts-ignore
 import { parse } from 'graphql/language/parser';
 import './style.css';
 
